@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <script>
+            function accessInjectedProp(propName) {
+                let prop = data[propName];
+                if (prop) {
+                    return prop
+                } else {
+                    let message = `Failed to access property by propery name: (${propName})`
+                    logger(message)
+                    console.error(message)
+                }
+            }
+        </script>
+        <script src="p5.js" ></script>
+        <script src="json.js" ></script>
+        <script src="functions.js" ></script>
+        <script src="main.js" ></script>
+    </body>
+</html>
+
